@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./Images/icon.jpg" />
+    <title>Tavarn || Front End Dev</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  </head>
+  <body>
+    <!--------------------Nav Section------------------------------->
+      <header>
+        <nav id="navBar">
+          <div class="logo">
+            <h1>
+              <img src="./Images/logo.jpeg" alt="Logo Image" class="logo-img" >
+            </h1>
+            <h5 class="logo-text">UI & UX<br>Designer</h5>
+          </div>
+
+          <div id="menuList">
+            <ul class="nav_list">
+              <li>
+                <a href="#" onclick="home()" class="nav_links L1">home</a>
+              </li>
+              <li>
+                <a href="#" onclick="about()" class="nav_links L2">about</a>
+              </li>
+              <li>
+                <a href="project.html" class="nav_links L2">Projects</a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  onclick="navbarFun()"
+                  id="ContactInfo"
+                  class="nav_links L3"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="Socials">
+            <a
+              href="https://www.instagram.com/tavarnh/"
+              target="_blank"
+              class="link"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCQ51UzCiyaskLa7fRiOnhnQ"
+              target="_blank"
+              class="link"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://www.twitch.tv/tavthedev"
+              target="_blank"
+              class="link"
+            >
+              <i class="fab fa-twitch"></i>
+            </a>
+          </div>
+        </nav>
+      </header>
+      <!--------------------Welcome Section------------------------------->
+      <main class="container projects-container">
+        <section id="welcome_page welcome">
+          <div class="area">
+            <video class="videoBack" autoplay loop muted preload="metadata">
+              <source src="./Videos/background.mp4" />
+            </video>
+            <div class="menu-container">
+              <div class="menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <div class="settings" onclick="Settings()">
+                <i class="fas fa-sliders-h"></i>
+              </div>
+            </div>
+            <!--------------------Settings Card------------------------------->
+            <div id="settingsCard">
+              <div class="settingsClose">
+                <i class="fas fa-times"></i>
+              </div>
+              <h1>Settings</h1>
+              <hr class="break" />
+              <div class="settings__options">
+                <h4>Backgrounds</h4>
+                <p>Change background</p>
+                <div class="options">
+                  <div class="blue" onclick="blue()">
+                    <h5 id="black" class="black">Black</h5>
+                  </div>
+                  <div class="white" onclick="white()">
+                    <h5 id="white" class="pool">White</h5>
+                  </div>
+                  <div onclick="Video()">
+                    <h5 id="Video" class="video">Video</h5>
+                  </div>
+                  <div class="normal" onclick="norm()">
+                    <h5 id="normal" class="Normal">Normal</h5>
+                  </div>
+                </div>
+<!--                <hr class="break2" />-->
+<!--                <div class="animations">-->
+<!--                  <h4>Animations</h4>-->
+<!--                  <p>show or hide animations</p>-->
+<!--                  <div class="animheader">-->
+<!--                    <div class="show" onclick="show()">-->
+<!--                      <h5 class="Show">Visible</h5>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+              </div>
+            </div>
+            <!-------------------- End Settings Card------------------------------->
+            <div class="Tag">
+              <p class="bodyTag change-color">&lt;body&gt;</p>
+            </div>
+            <div class="content">
+              <div id="welcomeContent">
+                <p class="Tag change-color">&lt;h1&gt;</p>
+                <h1 id="welcomeHeader">
+                  <span class="anim q1">H</span><span class="anim q1">e</span
+                  ><span class="anim q1">y</span>,<br />
+                  <span class="anim q1">I</span>'<span class="anim q1">m</span>
+                  <span class="anim q1">T</span><span class="anim">a</span
+                  ><span class="anim">v</span><span class="anim">a</span
+                  ><span class="anim">r</span><span class="anim">n</span><br />
+                  <span class="text anim important"></span>
+                </h1>
+                <script type="text/javascript">
+                  new Typed(".text", {
+                  strings: ["Youtuber.", "Developer.", "Freelancer.", "Designer."],
+                  typeSpeed: 200,
+                  backSpeed: 50,
+                  loop: true,
+                  });
+                </script>
+                <p class="welcome-info change-color">Front End Developer & Designer</p>
+                <p class="Tag change-color">&lt;h1&gt;</p>
+                <a href="project.html">
+                  <button class="homeButton">Projects</button>
+                </a>
+              </div>
+
+              <div class="floatingRings">
+                <img src="./Images/ring.png" class="ring" alt="ring" />
+                <img src="./Images/ring.png" class="ring1" alt="ring" />
+              </div>
+            </div>
+
+            <!------------------work section----------------------->
+            <section>
+              <div id="workSection">
+                <p class="Tag change-color">&lt;h1&gt;</p>
+                <h1 class="contactH1">
+                  <span class="anim">C</span><span class="anim">o</span
+                  ><span class="anim">n</span><span class="anim">t</span
+                  ><span class="anim">a</span><span class="anim">c</span
+                  ><span class="anim">t</span> <span class="anim">M</span
+                  ><span class="anim">e</span>
+                </h1>
+                <p class="Tag change-color">&lt;h1&gt;</p>
+
+                <p class="Tag change-color">&lt;p&gt;</p>
+                <p class="aboutContext change-color">Fill out the form below.</p>
+                <p class="Tag change-color">&lt;p&gt;</p>
+
+                <div class="contact__container">
+                  <br />
+                  <form
+                    action="https://formsubmit.co/henrytavarn5@gmail.com"
+                    method="POST"
+                    id="reused_form"
+                  >
+                    <div class="col-1">
+                      <div class="inputBox">
+                        <label for="FName"></label>
+                        <input
+                            type="text"
+                            id="FName"
+                            name="name"
+                            required
+                            autocomplete="none"
+                            placeholder="Name"
+                          />
+                      </div>
+
+                      <div class="inputBox">
+                        <label for="email"></label><input
+                            type="email"
+                            name="Email"
+                            id="email"
+                            required
+                            autocomplete="none"
+                            placeholder="Email"
+                          />
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="inputBox">
+                        <label for="subject"></label><input type="text" id="subject" required placeholder="Subject"/>
+                      </div>
+                    </div>
+                    <div class="w100">
+                      <label for="message"></label>
+                      <textarea
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                    <br />
+                    <button type="submit" class="submitBTN">Send</button>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <!----------------End work section------------------->
+            <!----------------About section--------------------->
+            <div class="about__container">
+              <p class="Tag change-color">&lt;h1&gt;</p>
+              <h1 class="aboutTitle">
+                 <span class="anim">Me</span> & <br> <span class="anim">Myself</span>
+              </h1>
+              <p class="Tag change-color">&lt;h1&gt;</p>
+              <br />
+              <p class="Tag change-color">&lt;p&gt;</p>
+              <div class="about-me-wrapper">
+                <p class="aboutMe change-color">
+                  Hey, my name is <span class="important">Tavarn Henry</span>, I'm a front end web developer from <span class="important">Jamaica</span>. I have a passion for <span class="important">Responsive Web Design</span>
+                  and <span class="important">UI Development</span>, I have experience with:
+                  <br />
+                  <span id="Skills" class="important"></span>
+                  <br />
+                  I'm well organized and have an open mind for learning new
+                  Technologies.
+                  <br />
+                </p>
+                <script type="text/javascript">
+                  //animate text for skills section
+                  new Typed("#Skills", {
+                    strings: ["JAVASCRIPT.", "HTML.", "PYTHON.", "GIT.", "CSS."],
+                    backSpeed: 50,
+                    typeSpeed: 150,
+                    loop: true,
+                  });
+                </script>
+              </div>
+
+              <p class="Tag change-color">&lt;p&gt;</p>
+              <div class="aboutButtons">
+                <a
+                  href="./Resources/Tavarn’s Resume.pdf"
+                  target="_blank">
+                  <button class="btn">Download CV</button>
+                </a>
+
+                <a href="#" onclick="navbarFun()">
+                  <button class="btn">Contact Me</button>
+                </a>
+              </div>
+            </div>
+            <!--<div class="overlay">Tavarn</div>-->
+          </div>
+        </section>
+
+        <section class="q-a-page" id="q-a-section">
+          <div class="q-a-container">
+            <p class="Tag change-color">&lt;h1&gt;</p>
+            <h1 class="q-a-header"><span class="anim">Questions</span> & <br> <span class="anim">Answers</span></h1>
+            <p class="Tag change-color">&lt;h1&gt;</p>
+            <div class="q-container">
+              <div class="answers">
+                <h1 class="questions">What's your name?</h1>
+                <p class="Answers">My name is Tavarn Henry. </p>
+              </div>
+              <div class="answers">
+                <h1 class="questions">Where you from?</h1>
+                <p class="Answers">I'm from Jamaica.</p>
+              </div>
+              <div class="answers">
+                <h1 class="questions">Did you go to college?</h1>
+                <p class="Answers">No i didn't. I'm a self taught developer.</p>
+              </div>
+              <div class="answers">
+                <h1 class="questions">How old are you?</h1>
+                <p class="Answers">I'm 18 years old.</p>
+              </div>
+              <div class="answers">
+                <h1 class="questions">How long have you been programming?</h1>
+                <p class="Answers">I have been programming for 1 Year. I recently left school and picked up programming full time.</p>
+              </div>
+              <div class="answers">
+                <h1 class="questions">what code editor do you use?</h1>
+                <p class="Answers">I get asked this a lot, i use PHP Storm because of its integrated features,
+                  not saying its the best editor but i prefer using it.</p>
+              </div>
+              <div class="answers">
+                <h1 class="questions">Do you want to become a Full stack developer?</h1>
+                <p class="Answers">Yes.</p>
+              </div>
+              <div class="answers answer-anchor">
+                <h1 class="questions">Got a question to ask?</h1>
+                <a href="#">
+                  <h1 class="questions contact-question" onclick="navbarFun()">Lets get in touch</h1>
+                </a>
+              </div>
+            </div>
+            <p class="Tag change-color">&lt;body&gt;</p>
+          </div>
+
+          <div class="copyright">
+            ©2021 by Tavarn Henry. All rights reserved.
+          </div>
+        </section>
+        <!----------------End About section------------------>
+        <nav id="navy">
+          <div class="logo">
+            <i class="fas fa-times" onclick="Close()"></i>
+            <h1>
+              <span class="anim">T</span>
+            </h1>
+            <p class="logo-text">UI & UX Designer</p>
+          </div>
+
+            <ul class="nav_list">
+              <li>
+                <a href="#" onclick="home()" class="nav_links L1">home</a>
+              </li>
+              <li>
+                <a href="#" onclick="about()" class="nav_links L2">about</a>
+              </li>
+              <li>
+                <a href="project.html" class="nav_links L2">Projects</a>
+              </li>
+              <li>
+                <a href="#" onclick="navbarFun()" class="nav_links L3">contact</a>
+              </li>
+            </ul>
+
+          <div class="Socials">
+            <a
+              href="https://www.instagram.com/tavarnh/"
+              target="_blank"
+              class="link"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCQ51UzCiyaskLa7fRiOnhnQ"
+              target="_blank"
+              class="link"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://www.twitch.tv/tavthedev"
+              target="_blank"
+              class="link"
+            >
+              <i class="fab fa-twitch"></i>
+            </a>
+          </div>
+        </nav>
+      </main>
+              <!--    linking javascript files-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="./Javascript/app.js"></script>
+      <script src="Javascript/animations.js"></script>
+     <script type="text/javascript">
+       const tl = gsap.timeline({
+         scrollTrigger: {
+            trigger: '.q-a-page',
+       }
+       });
+
+       tl.from(".q-a-header", {y: 40, opacity: 0, duration: 1})
+       .from(".questions", {x: 50, opacity: 0, duration: 1}, '=-1')
+     </script>
+  </body>
+</html>

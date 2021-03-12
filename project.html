@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./Images/icon.jpg">
+    <title>Projects || TavTheDev</title>
+    <link rel="stylesheet" href="./CSS/project.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+</head>
+<body>
+  <div class="preloader">
+    <h1 class="preload_anim">Getting things ready</h1>
+    <h5>please wait..</h5>
+    
+    <div class="loader"></div>
+  </div>
+
+<!--  header-->
+  <header>
+      <nav id="navBar">
+          <div class="logo">
+              <h1>
+                  <img src="./Images/logo.jpeg" alt="Logo Image" class="logo-img" >
+              </h1>
+              <h5 class="logo-text">UI & UX<br>Designer</h5>
+          </div>
+
+          <div id="menuList">
+              <ul class="nav_list">
+                  <li>
+                      <a href="index.html" onclick="home()" class="nav_links L1">home</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="Socials">
+              <a
+                      href="https://www.instagram.com/tavarnh/"
+                      target="_blank"
+                      class="link"
+              >
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                      href="https://www.youtube.com/channel/UCQ51UzCiyaskLa7fRiOnhnQ"
+                      target="_blank"
+                      class="link"
+              >
+                  <i class="fab fa-youtube"></i>
+              </a>
+              <a
+                      href="https://www.twitch.tv/tavthedev"
+                      target="_blank"
+                      class="link"
+              >
+                  <i class="fab fa-twitch"></i>
+              </a>
+          </div>
+      </nav>
+  </header>
+    <!-- projects section -->
+    <main class="container">
+        <div class="menu-container">
+            <div class="menu">
+                <a href="index.html">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+            <div class="headers">
+                <h1> <span class="anim">Projects</span> & <br> <span class="anim">Portfolio</span></h1>
+            </div>
+            <div class="projects-grid">
+              <a href="./Resources/project1.png" target="_blank">
+                <div class="project P0">
+                    <h1>Profile Card</h1>
+                    <img src="./Resources/project1.png" alt="Project1" >
+                </div>
+              </a>
+              <a href="./Resources/Project2.png" target="_blank">
+                <div class="project P1">
+                    <h1>Fitness website</h1>
+                    <img src="./Resources/Project2.png" alt="Project2">
+                </div>
+              </a>
+              <a href="./Resources/Project3.png" target="_blank">
+                <div class="project P2">
+                    <h1>Testimonials Page</h1>
+                    <img src="./Resources/Project3.png" alt="Project3">
+                </div>
+              </a>
+              <a href="./Resources/Project4.png" target="_blank">
+                <div class="project P3">
+                    <h1>RedStore</h1>
+                    <img src="./Resources/Project4.png" alt="Project4">
+                </div>
+              </a>
+              <a href="./Resources/Project6.png" target="_blank">
+                <div class="project P4">
+                    <h1>Event Form</h1>
+                    <img src="./Resources/Project6.png" alt="Project6">
+                </div>
+              </a>
+              <a href="./Resources/Project7.png" target="_blank">
+                <div class="project P5">
+                    <h1>Calculator</h1>
+                    <img src="./Resources/Project7.png" alt="Project7">
+                </div>
+              </a>
+              <a href="./Resources/Project8.png" target="_blank">
+                <div class="project P6">
+                    <h1>Insure Page</h1>
+                    <img src="./Resources/Project8.png" alt="Project8">
+                </div>
+              </a>
+              <a href="./Resources/Project9.png" target="_blank">
+                <div class="project P7">
+                    <h1>My First Portfolio</h1>
+                    <img src="./Resources/Project9.png" alt="Project9">
+                </div>
+              </a>
+            </div>
+
+    </main>
+    <script src="./Javascript/project.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      setInterval(function(){
+        $('.preloader').fadeOut();
+      }, 5000);
+    </script>
+</body>
+</html>
